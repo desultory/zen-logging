@@ -10,9 +10,9 @@ The following additional kwargs are handled in __init__:
 * `_log_init` (bool) Can be passed to loggified classes, to enable or disable additional initialization logging.
 * `_log_bump` (int) Changes the log level for added loggers.
 
-Loggified classes will also log use of _\_getattribute__, _\_setattr__,  and _\_getitem__.
+Loggified classes will also log use of __getattribute__, __setattr__,  and __getitem__.
 
-Functions returned from _\_getattribute__ will automatically log additioanl information such as passed args and results.
+Functions returned from __getattribute__ will automatically log additioanl information such as passed args and results.
 
 ### ColorLognameFormatter
 
