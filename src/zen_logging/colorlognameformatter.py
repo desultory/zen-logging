@@ -1,5 +1,5 @@
 __author__ = "desultory"
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 
 from logging import Formatter
@@ -41,11 +41,7 @@ class ColorLognameFormatter(Formatter):
         # When calling format, replace the levelname with a colored version
         # Note: the string size is greatly increased because of the color codes
         old_levelname = record.levelname
+        record.levelname = self.color_levelname(record.levelname)
         format_str = super().format(record)
-
-        try:
-            record.levelname = old_levelname
-        except NameError:
-            pass
-
+        record.levelname = old_levelname
         return format_str
