@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/desultory/zen_logging"
-Issues = "https://github.com/desultory/zen_logging/issues"
+Homepage = "https://github.com/desultory/zen-logging"
+Issues = "https://github.com/desultory/zen-logging/issues"
